@@ -20,6 +20,22 @@
 // Then you see modify options in right dialogue box after clicking that there will be option called     Add Vm Options
 
 
+// For VisualStudioCode
+// When  you open dwdm_internal_lab_program you will see options in explorer like you folder name ,outline,timelines,javaprojects
+// select javaprojects dropdown after clicking that you will see anothor drop down called referenced library there click on + symbol
+// add weka jar file
+
+//  After this right click on any opened file then click debug java
+// then at left side you will see you will see run and debug button below there will a option call launch json file click it
+//  then add below option to program 06_updated ,program_07,program_08,program_09 below to projectname
+
+                      // "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
+
+                    //   Now right click on file then you will see debug java option click on it
+                    // you will get the output
+
+
+
 //https://weka.sourceforge.io/doc.dev/weka/clusterers/SimpleKMeans.html
 //https://www.tabnine.com/code/java/classes/weka.clusterers.SimpleKMeans
 
