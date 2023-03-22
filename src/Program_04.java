@@ -11,7 +11,7 @@ public class Program_04 {
         double[] normalized_vector = new double[vector.length] ;
 
         double mean = Arrays.stream(vector).average().getAsDouble();
-        double std_dev = Math.sqrt(Arrays.stream(vector).map(x->Math.pow(x-mean,2)).sum());
+        double std_dev = Math.sqrt(Arrays.stream(vector).map(x->Math.pow(x-mean,2)).sum()/ vector.length);
 
         System.out.println("Mean = "+String.format("%.2f",mean)+"      "+"StandardDeviation = "+String.format("%.2f",std_dev));
         for(int i=0;i<vector.length;i++){
