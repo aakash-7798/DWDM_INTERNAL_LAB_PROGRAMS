@@ -61,6 +61,7 @@ public class Program_01 {
 //        double[] data = {-1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0, -9.0, -10.0};
         int binSize = 4;
         int ct = 0;
+        data = Arrays.stream(data).sorted().toArray();
         System.out.println("Partitioned Data ");
         for(int i =0;i< data.length;i+=binSize){
             int sz = i+binSize;
