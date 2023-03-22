@@ -20,14 +20,6 @@
 //         That configuration can then be used as the default when running the project.
 
 
-//http://www.java2s.com/example/java/machine-learning-ai/use-weka-association-rules.html
-
-
-// For Intellij
-// Click on edit configurations which is present right upper corner adjacent to hammer symbol click on drop down list
-// Then you see modify options in right dialogue box after clicking that there will be option called     Add Vm Options
-
-
 // For VisualStudioCode
 // When  you open dwdm_internal_lab_program you will see options in explorer like you folder name ,outline,timelines,javaprojects
 // select javaprojects dropdown after clicking that you will see anothor drop down called referenced library there click on + symbol
@@ -37,10 +29,19 @@
 // then at left side you will see you will see run and debug button below there will a option call launch json file click it
 //  then add below option to program 06_updated ,program_07,program_08,program_09 below to projectname
 
-                      // "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
+// "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
 
-                    //   Now right click on file then you will see debug java option click on it
-                    // you will get the output
+//   Now right click on file then you will see debug java option click on it
+// you will get the output
+
+
+//http://www.java2s.com/example/java/machine-learning-ai/use-weka-association-rules.html
+
+
+// For Intellij
+// Click on edit configurations which is present right upper corner adjacent to hammer symbol click on drop down list
+// Then you see modify options in right dialogue box after clicking that there will be option called     Add Vm Options
+
 
 
 //https://weka.sourceforge.io/doc.dev/weka/associations/Apriori.html

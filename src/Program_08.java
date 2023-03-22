@@ -36,10 +36,10 @@
 // then at left side you will see you will see run and debug button below there will a option call launch json file click it
 //  then add below option to program 06_updated ,program_07,program_08,program_09 below to projectname
 
-                      // "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
+// "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
 
-                    //   Now right click on file then you will see debug java option click on it
-                    // you will get the output
+//   Now right click on file then you will see debug java option click on it
+// you will get the output
 
 
 //8. Write a program to create decision tree classifier for given training data and find accuracy of the
@@ -83,15 +83,16 @@ public class Program_08 {
             Evaluation eval = new Evaluation(train);
             eval.evaluateModel(cls,test);
 
+            System.out.println("Accuracy = "+eval.pctCorrect());
 
 //           System.out.println("Correlation Coefficient = "+eval.correlationCoefficient());
 //            System.out.println("Area Under ROC "+eval.areaUnderROC(3));
 //           System.out.println("Accuracy = "+eval.pctCorrect());
 
-            System.out.println(eval.toMatrixString());
-            System.out.println(eval.toClassDetailsString());
+//            System.out.println(eval.toMatrixString());
+//            System.out.println(eval.toClassDetailsString());
 
-            System.out.println(eval.toSummaryString("\nResults\n======\n", false));
+//            System.out.println(eval.toSummaryString("\nResults\n======\n", false));
 
 //            tree.buildClassifier(data);
 //            System.out.println(tree.graph());

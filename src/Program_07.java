@@ -16,6 +16,7 @@
 // right click the project. Click Run as then Run Configurations. You can change the parameters passed to the JVM in the Arguments tab in the VM Arguments box.
 //         That configuration can then be used as the default when running the project.
 //http://www.java2s.com/example/java/machine-learning-ai/use-weka-association-rules.html
+
 // For Intellij
 // Click on edit configurations which is present right upper corner adjacent to hammer symbol click on drop down list
 // Then you see modify options in right dialogue box after clicking that there will be option called     Add Vm Options
@@ -30,10 +31,10 @@
 // then at left side you will see you will see run and debug button below there will a option call launch json file click it
 //  then add below option to program 06_updated ,program_07,program_08,program_09 below to projectname
 
-                      // "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
+// "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
 
-                    //   Now right click on file then you will see debug java option click on it
-                    // you will get the output
+//   Now right click on file then you will see debug java option click on it
+// you will get the output
 
 
 //https://weka.sourceforge.io/doc.dev/weka/associations/FPGrowth.html#setMetricType-weka.core.SelectedTag

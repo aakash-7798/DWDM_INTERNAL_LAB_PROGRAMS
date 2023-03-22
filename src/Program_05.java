@@ -33,8 +33,8 @@ public class Program_05 {
 
     public static void main(String[] args) {
 //        double[] vector = {1000.01,2000.05,3000.255,4000.55,5000.555,6000.255};
-        double[] vector = {-1000.01,-2000.05,-3000.255,-4000.55,-5000.555,-6000.255};
-//        double[] vector = {0.65,0.23};
+//        double[] vector = {-1000.01,-2000.05,-3000.255,-4000.55,-5000.555,-6000.255};
+        double[] vector = {0.65,0.23};
               System.out.println("Original Vector  = "+ Arrays.toString(vector));
         System.out.println("Normalized Vector Using Decimal Scaling = "+ Arrays.toString(get_decimal_scaling_normalized_vector(vector)));
 

@@ -3,10 +3,7 @@
 //1. Write a program to remove noise by smoothing the data by bin means and bin boundaries.
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class Program_01 {
 
@@ -56,13 +53,15 @@ public class Program_01 {
     }
 
     public static void main(String[] args) {
-//         double[] data = {4, 8, 9, 15, 21, 21, 24, 25, 26, 28, 29, 34};
+//        double[] data = {4, 8, 9, 15, 21, 21, 24, 25, 26, 28, 29, 34};
         double[] data = {21,21,4,15,9,8,34,26,24,25,29,28,15};
 //        double[] data = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0};
 //        double[] data = {-1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0, -9.0, -10.0};
         int binSize = 4;
         int ct = 0;
+//        System.out.println(Arrays.toString(data));
         data = Arrays.stream(data).sorted().toArray();
+//        System.out.println(Arrays.toString(data));
         System.out.println("Partitioned Data ");
         for(int i =0;i< data.length;i+=binSize){
             int sz = i+binSize;

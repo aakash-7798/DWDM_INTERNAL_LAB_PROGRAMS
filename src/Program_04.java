@@ -11,7 +11,7 @@ public class Program_04 {
         double[] normalized_vector = new double[vector.length] ;
 
         double mean = Arrays.stream(vector).average().getAsDouble();
-        double std_dev = Math.sqrt(Arrays.stream(vector).map(x->Math.pow(x-mean,2)).sum()/ vector.length);
+        double std_dev = (double) Math.sqrt(Arrays.stream(vector).map(x->Math.pow(x-mean,2)).sum()/ vector.length);
 
         System.out.println("Mean = "+String.format("%.2f",mean)+"      "+"StandardDeviation = "+String.format("%.2f",std_dev));
         for(int i=0;i<vector.length;i++){
@@ -23,7 +23,7 @@ public class Program_04 {
     }
 
     public static void main(String[] args) {
-//         double[] vector = {5.0,10.0,3.0,8.0,1.0};
+//        double[] vector = {5.0,10.0,3.0,8.0,1.0};
         double[] vector = {3,5,5,8,9,12,12,13,15,16,17,19,22,24,25,134};
         System.out.println("Original Vector  = "+ Arrays.toString(vector));
         System.out.println("Normalized Vector Using Z-score = "+ Arrays.toString(get_z_score_normalized_vector(vector)));
