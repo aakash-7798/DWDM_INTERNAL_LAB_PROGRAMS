@@ -1,0 +1,135 @@
+10 i) Koddiga Doubtful adhe na kaadha ani . so leave it at present
+If don't know do same as 11 ii) remove noise
+
+10 ii) Correlation Analysis
+ 
+Double click on weka software 
+click on explorer
+weka explorer window will appear
+click on open files
+browse will appear 
+there go to 
+windows c -> program files -> weka(version-name eg 3-9-6)-> data
+After clicking data folder you will see lot of arff files 
+There click on cpu.arff
+Now data will be loaded to weka explorer window
+In Upper ribbon (menu tab) click on classify 
+After clicking you will see Classifier with choose button 
+click on that button (choose)
+After clicking choose you will see classifiers dropdown click on it
+After that click on funtions there you will see Linear Regression
+Click on Linear Regression
+After Clicking that then Linear Regression will be appeared in choose button textbox
+Below choose you will see test options 
+I am using Cross-validation with Folds as 10
+you can use any four of them 
+Click on Start 
+Right side you will see Classifier output
+In Output Under Summary You will see Correlation Coefficient
+
+
+
+11 i) Normalize
+ 
+Double click on weka software 
+click on explorer
+weka explorer window will appear
+click on open files
+browse will appear 
+there go to 
+windows c -> program files -> weka(version-name eg 3-9-6)-> data
+After clicking data folder you will see lot of arff files 
+There click on same cpu.arff as it is having lot of numeric values
+
+Note(Normalization is only applied on numeric not categorical so choose 
+correct dataset)
+
+Now data will be loaded to weka explorer window
+Now click on choose in filter tab in the same window
+You will see filters drop down
+After clicking you will see many options 
+there click on unsupervised dropdown
+again click on attribute dropdown
+see normalize option and click
+then Normalize with parameters will be appeared in choose textbox
+click on apply exactly right to choose textbox
+Now you can see every attribute value range is between 0 and 1
+See Right side of Weka explorer window you will see selected attributes 
+There see Minimum and Maximum value
+
+11 ii) Removing noise
+
+Double click on weka software 
+click on explorer
+weka explorer window will appear
+click on open files
+browse will appear 
+there go to 
+windows c -> program files -> weka(version-name eg 3-9-6)-> data
+After clicking data folder you will see lot of arff files 
+There click on same cpu.arff as it is having lot of numeric values
+Now data will be loaded to weka explorer window
+Now click on choose in filter tab in the same window
+You will see filters drop down
+After clicking you will see many options 
+there click on unsupervised dropdown
+again click on attribute dropdown
+see InterquartileRange option and click
+After that InterquartileRange is appeared in textbox
+Click on apply
+After this you will see extra two attributes (Outlier and ExtremeValue)
+
+Click on Outlier you will see right side in selected attibute labels as yes and no
+if yes values are > 0 then we have noisy data 
+similarly check for ExtremeValues
+so we need to remove yes values totally
+
+Now click on choose in filter tab in the same window
+You will see filters drop down
+After clicking you will see many options 
+there click on unsupervised dropdown
+click on instance dropdown
+click on RemovewithValues
+After this RemovewithValues with parameters will be appeared on filters textbox
+
+Outlier Attribute
+click on  RemovewithValues textbox you will get lot of options 
+first textbox called attributeIndex change first-last to 8 as for this dataset Outlier is 8th attribute 
+eighth textbox called nominalindices change first-last to last as we want to remove only yes 
+click on ok and click on apply
+Now click on outlier and see you will have yes a 0
+
+ExtremeValues Attribute
+click on  RemovewithValues textbox you will get lot of options 
+first textbox called attributeIndex change first-last to 9 as for this dataset ExtremeValue is 9th attribute 
+eighth textbox called nominalindices change first-last to last as we want to remove only yes 
+click on ok and click on apply
+Now click on ExtremeValue and see you will have yes a 0
+
+12. Use weka tool to generate association rule using the apriori algorithm. Write the rules
+generated.
+
+dataset is supermarket.arff
+
+Double click on weka software 
+click on explorer
+weka explorer window will appear
+click on open files
+browse will appear 
+there go to 
+windows c -> program files -> weka(version-name eg 3-9-6)-> data
+After clicking data folder you will see lot of arff files 
+There click on same supermarket.arff 
+After this click on Associate in upper tab 
+In Associater tab click on choose and in associaters select Apriori
+click on start you will see the result right side
+
+
+
+
+
+
+
+
+
+
